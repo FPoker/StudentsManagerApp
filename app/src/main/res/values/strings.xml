@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Cesae Student</string>
+    <string name="select_course">Select a Course</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in" translatable="false">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password" translatable="false">Password must be >5 characters</string>
+    <string name="login_failed" translatable="false">"Login failed"</string>
+    <string name="student_manager">Student Manager App</string>
+    <string name="go_back">Go Back</string>
+    <string name="about_us">About Us</string>
+    <string name="project">Project</string>
+    <string name="cesae_app_student">CESAE App Student</string>
+    <string name="project_advisor">Project Advisor</string>
+    <string name="mobile_access_to_information_systems">Mobile access to information systems</string>
+    <string name="module">Module</string>
+    <string name="software_developer_cesae_digital" translatable="false">Software Developer / CESAE DIGITAL</string>
+    <string name="devs_name" translatable="false">Filipe Ramos\nLuis Macieira</string>
+    <string name="devs" translatable="false">Developers</string>
+    <string name="course_institute">Course / Institute</string>
+    <string name="pro_advisor" translatable="false">Bruno Santos</string>
+    <string name="additional_information">Additional Information</string>
+    <string name="text_about_us" translatable="false">This app was built in Android Studio with Kotlin language. It uses some features like Google API, Weather API and auto-login (with tokens). To ensure the best performance, we utilized Retrofit and Recycle Views. The app is multilingual (Portuguese and English). \nWe wanted to make the app as user-friendly as possible, so we integrated features such as user registration and password recovery. Our users can also easily manage their courses by adding, editing, removing, and check the course details. \n In addition, our app allows users to create, edit, and remove students and associate them with their courses. They can also contact the student by email or phone. All of this information is securely stored in our Room database.</string>
+    <string name="course">Course</string>
+    <string name="course_year">Course Year</string>
+    <string name="course_designation">Course Designation</string>
+    <string name="add_course">Add Course</string>
+    <string name="students">Students</string>
+    <string name="order_by_asc">Order by Asc</string>
+    <string name="order_by_desc">Order by Desc</string>
+    <string name="info">Info</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="courses">Courses</string>
+    <string name="add_new_course">Add New Course</string>
+    <string name="edit_course">Edit Course</string>
+    <string name="delete_course">Delete Course</string>
+    <string name="course_details">Course Details</string>
+    <string name="et_name">Name</string>
+    <string name="tv_hello">Hello</string>
+    <string name="image_view_student" translatable="false">Image View Student</string>
+    <string name="image_view_courses" translatable="false">Image View Courses</string>
+    <string name="map">Map</string>
+    <string name="image_view_map" translatable="false">Image View Map</string>
+    <string name="logout">Logout</string>
+    <string name="weather">Weather</string>
+    <string name="recover_password">Recover Password</string>
+    <string name="send_email">Send Email</string>
+    <string name="iv_cesae_logo" translatable="false">CESAE Logo</string>
+    <string name="new_user">New User</string>
+    <string name="password_confirmation">Password Confirmation</string>
+    <string name="register">Register</string>
+    <string name="tv_id" translatable="false">ID</string>
+    <string name="student_name">Student Name</string>
+    <string name="student_address">Student Address</string>
+    <string name="student_email">Student Email</string>
+    <string name="student_age">Student Age</string>
+    <string name="student_phone">Student Phone</string>
+    <string name="list_of_courses">List of courses</string>
+    <string name="add_student">Add Student</string>
+    <string name="add_new_student">Add New Student</string>
+    <string name="edit_student">Edit Student</string>
+    <string name="delete_student">Delete Student</string>
+    <string name="student_details">Student Details</string>
+    <string name="designation">Designation</string>
+    <string name="year">Year</string>
+    <string name="location">Location</string>
+    <string name="updated_at">Updated at</string>
+    <string name="clear_sky">Clear Sky</string>
+    <string name="temperature_celsius" translatable="false">24ºC</string>
+    <string name="min_temp">Min Temp</string>
+    <string name="max_temp">Max Temp</string>
+    <string name="sunset">Sunset</string>
+    <string name="time_pm">19:30pm</string>
+    <string name="time_am" translatable="false">5:30am</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="wind">Wind</string>
+    <string name="loading">loading</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="something_went_wrong">Something Went Wrong</string>
+    <string name="image_view_about_us" translatable="false">Image View About Us</string>
+    <string name="you_select">You select</string>
+    <string name="toast_auth_again">Authenticate Again!</string>
+
+</resources>

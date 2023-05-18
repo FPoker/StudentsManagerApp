@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_menu_bg"
+    android:orientation="vertical"
+    tools:context=".AboutUsActivity">
+
+    <Button
+        android:id="@+id/btn_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/go_back"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_about_us_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/about_us"
+        android:textColor="@color/app_theme_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edit_transparent_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_about_us_title">
+
+        <TextView
+            android:id="@+id/tv_about_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/devs"
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/tv_about_our_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/devs_name"
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_transparent_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_about">
+
+        <TextView
+            android:id="@+id/tv_about_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/course_institute"
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/tv_about_course_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/software_developer_cesae_digital"
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about_module"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_transparent_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_about_course">
+
+        <TextView
+            android:id="@+id/tv_about_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/module"
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/tv_about_module_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/mobile_access_to_information_systems"
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_transparent_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_about_module">
+
+        <TextView
+            android:id="@+id/tv_about_project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/project"
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/tv_about_project_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/cesae_app_student"
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about_project_advisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_transparent_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_about_project">
+
+        <TextView
+            android:id="@+id/tv_about_project_advisor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/project_advisor"
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/tv_about_project_advisor_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/pro_advisor"
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about_relevant_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_transparent_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_about_project_advisor">
+
+        <TextView
+            android:id="@+id/tv_about_relevant_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/additional_information"
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_about_relevant_information_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="This app was built in Android Studio with Kotlin language. It uses some features like Google API, Weather API and auto-login (with tokens). To ensure the best performance, we utilized Retrofit and Recycle Views. The app is multilingual (Portuguese and English). \n\nWe wanted to make the app as user-friendly as possible, so we integrated features such as user registration and password recovery. Our users can also easily manage their courses by adding, editing, removing, and check the course details. \n\nIn addition, our app allows users to create, edit and remove students and associate them with their courses. They can also contact the student by email or phone. All of this information is securely stored in our Room database. \n\nConsult README.txt for further informations."
+            android:textColor="@color/app_theme_light"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

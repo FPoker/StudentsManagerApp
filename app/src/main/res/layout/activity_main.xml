@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_menu_bg"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="@string/tv_hello"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_menu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome">
+
+        <LinearLayout
+            android:id="@+id/ll_student"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_transparent_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_student"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/student"
+                android:contentDescription="@string/image_view_student"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/students"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_course"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_transparent_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ll_student"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_course"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/studentmanager"
+                android:contentDescription="@string/image_view_courses"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/courses"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_map"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_transparent_background"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_student">
+
+            <ImageView
+                android:id="@+id/iv_map"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/googlemap"
+                android:contentDescription="@string/image_view_map"
+                android:text="@string/map" />
+
+            <TextView
+                android:id="@+id/tv_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/map"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_weather"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_transparent_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ll_map"
+            app:layout_constraintTop_toBottomOf="@id/ll_course">
+
+            <ImageView
+                android:id="@+id/iv_weather"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/weather"
+                android:contentDescription="@string/logout" />
+
+            <TextView
+                android:id="@+id/tv_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/weather"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_about"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_transparent_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_map">
+
+            <ImageView
+                android:id="@+id/iv_about_us"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/aboutus"
+                android:contentDescription="@string/image_view_about_us"
+                android:text="@string/about_us"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_about_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/about_us"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/btn_logout"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:contentDescription="@string/logout"
+            android:src="@drawable/ic_action_logout"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_submenu_bg"
+    android:padding="8dp"
+    tools:context=".StudentDetailsActivity">
+
+    <TextView
+        android:id="@+id/tvIdStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ID"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/etStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/box_outline"
+        android:drawableStart="@drawable/ic_action_name"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:minHeight="58dp"
+        android:padding="10dp"
+        android:text="@string/student_name"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/etAddressStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/box_outline"
+        android:drawableStart="@drawable/ic_action_home"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:minHeight="58dp"
+        android:padding="10dp"
+        android:text="@string/student_address"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/etEmailStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/box_outline"
+        android:drawableStart="@drawable/ic_action_email_two"
+        android:drawableEnd="@drawable/ic_action_email"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:minHeight="58dp"
+        android:padding="10dp"
+        android:text="@string/student_email"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/etAgeStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/box_outline"
+        android:drawableStart="@drawable/ic_action_age"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:minHeight="58dp"
+        android:padding="10dp"
+        android:text="@string/student_age"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/etPhoneStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/box_outline"
+        android:drawableStart="@drawable/ic_action_phone"
+        android:drawableEnd="@drawable/ic_action_call"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:minHeight="58dp"
+        android:padding="10dp"
+        android:text="@string/student_phone"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/etCourseDesignation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/box_outline"
+        android:drawableStart="@drawable/ic_action_course"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:minHeight="58dp"
+        android:padding="10dp"
+        android:text="@string/course_designation"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_go_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/go_back" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_students"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

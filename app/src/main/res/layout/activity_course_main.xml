@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_submenu_alt_bg"
+    android:layout_height="match_parent"
+    tools:context=".CourseMainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/courses"
+        android:textColor="#673AB7"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/go_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_courses"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:minHeight="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_order_asc"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_action_asc"
+        android:contentDescription="@string/order_by_asc"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recycler_courses"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_order_desc"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_action_desc"
+        android:contentDescription="@string/order_by_desc"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toStartOf="@+id/btn_order_asc"
+        app:layout_constraintTop_toTopOf="@id/recycler_courses"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.980">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_action_add_course"
+            android:contentDescription="@string/add_new_course"
+            app:backgroundTint="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_action_edit_student"
+            android:contentDescription="@string/edit_course"
+            app:backgroundTint="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnAdd"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_action_delete_student"
+            android:contentDescription="@string/delete_course"
+            app:backgroundTint="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnEdit"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnDetails"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_action_details_course"
+            android:contentDescription="@string/course_details"
+            app:backgroundTint="@color/grey_icon"
+            app:layout_constraintStart_toEndOf="@id/btnDelete"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
